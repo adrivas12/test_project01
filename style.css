@@ -65,21 +65,49 @@ nav img{
     width: 100%;
 }
 
-#navbar ul{
-    padding:0;
-    list-style: none;
+#text{
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-#navbar li{
-    display: inline;
-    text-align: right;
+#text h1{
+    font-size: 62px;
 }
 
-#navbar a{
+#text p{
+    margin: 10px 0 40px;
+    font-size: 16px;
     color: #fff;
-    padding-right: 15px;
-    
-} 
+}
+
+#btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+#btn:hover{
+    border: 1px solid palevioletred;
+    background: palevioletred;
+    transition: 1s;
+}
+
+
+
+
+
+
+
 
 #intro{
     background-image: url('../images/images.jpeg');
