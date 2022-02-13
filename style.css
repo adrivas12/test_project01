@@ -48,7 +48,7 @@ nav img{
 #navbar ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #navbar ul li::after{
@@ -80,7 +80,7 @@ nav img{
 
 #text p{
     margin: 10px 0 40px;
-    font-size: 16px;
+    font-size: 25px;
     color: #fff;
 }
 
@@ -88,9 +88,9 @@ nav img{
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid palevioletred;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 17px;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -102,59 +102,161 @@ nav img{
     transition: 1s;
 }
 
+@media(max-width: 700px){
+    #text h1{
+        font-size: 20px;
+    }
+    #text p{
+        font-size: 20px;
+    }
+    #navbar ul li{
+        display: block;
+    }
+}
 
-
-
-
-
-
-
-#intro{
-    background-image: url('../images/images.jpeg');
-    background-position: center right;
-    min-height: 300px;
-    margin-bottom: 30px;
+/*------about-----*/
+#about{
+    width: 80%;
+    margin: auto;
     text-align: center;
+    padding-top: 100px;
 }
-
-#intro h1{
-    color: #fff;
-    font-size: 50px;
-    line-height: 1.6em;
-    padding-top: 30px;
+h1{
+    font-size: 36px;
+    font-weight: 600;
 }
-
-#main{
-    float: left;
-    width: 70%;
-    padding: 0 30px;
-    box-sizing: border-box;
-}
-
-#sidebar{
-    float: right;
-    width: 30%;
-    background: #333;
-    color: #fff;
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
     padding: 10px;
+}
+
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
     box-sizing: border-box;
 }
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+/*------skills-------*/
+.skills{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: black;
+}
+.row2{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(78, 117, 190, 0.6);
+}
+.layer h3{
+    width: 100%;
+    font-weight:500 ;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transform: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.contact-me{
+    width: 80%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../images/portfolio-09.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contact-me h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
 
 #main-footer{
-    background: #333;
-    color:#fff;
+    width: 100%;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 30px 0;
+}
+#main-footer p{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 600;
 }
 
-@media(max-width: 600px){
-    #main{
-        width: 100%;
-        float:none;
-    }
-    #sidebar{
-        width: 100%;
-        float:none;
-    }
+
+.ctn-form input{
+    width: 40%;
+    padding: 15px;
+    margin-bottom: 17px;
+    margin-left: 150px;
+    margin-right: 150px;
+    outline: none;
+    border: 1px solid salmon;
+    box-sizing:border-box ;
+}
+.ctn-form textarea{
+    width: 40%;
+    padding: 15px;
+    margin-bottom: 17px;
+    margin-left: 200px;
+    outline: none;
+    border: 1px solid salmon;
+    box-sizing:border-box ;
 }
