@@ -16,7 +16,7 @@ body{
 #header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../images/images.jpeg);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./images/images.jpeg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -214,7 +214,7 @@ h3{
 .contact-me{
     width: 80%;
     margin: 100px auto;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../images/portfolio-09.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./images/portfolio-09.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
